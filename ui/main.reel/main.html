@@ -13,6 +13,37 @@
                 "element": {"#": "main"}
             }
         },
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Button"
+            }
+        },
+        "textField": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "placeholderValue": "Text"
+            }
+        },
+        "textField2": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "placeholderValue": "Text"
+            }
+        },
+        "textField3": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField3"},
+                "placeholderValue": "Text"
+            }
+        },
         "title": {
             "prototype": "digit/ui/title.reel",
             "properties": {
@@ -28,7 +59,12 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <h1 data-montage-id="title"></h1>
+        <h1 data-montage-id="title">
+            <input data-montage-id="textField3" type="text">
+        </h1>
+        <input data-montage-id="textField" type="text">
+            <button data-montage-id="button"></button>
+        </input>
     </div>
 </body>
 </html>
