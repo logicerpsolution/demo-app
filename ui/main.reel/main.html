@@ -37,13 +37,15 @@
         "textField2": {
             "prototype": "digit/ui/text-field.reel",
             "properties": {
-                "placeholderValue": "Text"
+                "placeholderValue": "Text",
+                "value": "Username"
             }
         },
         "textField3": {
             "prototype": "digit/ui/text-field.reel",
             "properties": {
-                "element": {"#": "textField3"},
+                "contenteditable": "true",
+                "draggable": "true",
                 "placeholderValue": "Text"
             }
         },
@@ -63,7 +65,7 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <h1 data-montage-id="title">
-            <input data-montage-id="textField3" type="text">
+
         </h1>
         <input data-montage-id="textField" type="text">
             <button data-montage-id="button"></button>
